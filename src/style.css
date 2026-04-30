@@ -1,7 +1,7 @@
 html {
   font-family: Roboto, sans-serif;
 
-  --header-height: 60px;
+  /* --header-height: 60px; */
   --blue-color: #00acdc;
 
   box-sizing: border-box;
@@ -18,35 +18,37 @@ body {
   width: 100%;
   background-color: #fff;
   justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
   height: 40px;
   width: 40px;
+  display: block;
   margin-left: 50px;
 }
 
 .logo__img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .nav {
   display: inline-block;
-  align-content: center;
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .nav__link {
+  align-items: center;
   display: inline-block;
   position: relative;
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
-  height: var(--header-height);
-  line-height: var(--header-height);
+  line-height: 60px;
   font-size: 12px;
+  white-space: nowrap;
+  transition: color 0.3s;
 }
 
 .nav__link:visited {
@@ -76,6 +78,7 @@ body {
 
 .nav__list {
   padding: 0;
+  margin: 0;
   list-style: none;
   display: flex;
 }

@@ -1,3 +1,92 @@
+html {
+  font-family: ' Roboto ', sans-serif;
+
+  --header-height: 60px;
+  --blue-color: #00acdc;
+
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 1024px;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  margin-left: 50px;
+}
+
+.logo__img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.nav {
+  display: inline-block;
+  align-content: center;
+  padding-right: 50px;
+}
+
+.nav__link {
+  display: inline-block;
+  position: relative;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 60px;
+  line-height: 60px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+:visited {
+  color: var(--blue-color);
+}
+
+:hover {
+  color: var(--blue-color);
+  text-decoration: underline;
+}
+
+.is-active {
+  position: relative;
+}
+
+.is-active::after {
+  content: '';
+  border-bottom: 4px solid var(--blue-color);
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+}
+
+.nav__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav__item {
+  margin-left: 20px;
+}
+
+.nav__item:first-child {
+  margin-left: 0;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
 }

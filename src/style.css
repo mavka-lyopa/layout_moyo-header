@@ -56,7 +56,7 @@ body {
 
 :hover {
   color: var(--blue-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .is-active {
